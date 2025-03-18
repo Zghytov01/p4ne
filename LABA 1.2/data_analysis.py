@@ -11,9 +11,9 @@ def getvalue(x): return x.value
 list_x=list(map(getvalue,ears))
 list_z=list(map(getvalue,solar_activity))
 list_y=list(map(getvalue,relative_temperature))
-pyplot.plot(list_x, list_y )
-pyplot.plot(list_x, list_z )
+pyplot.plot(list_x, list_y , label='Relative Temperature')
+pyplot.plot(list_x, list_z , label='Solar Activity' )
 pyplot.xlabel('Ears')
 pyplot.ylabel('Relative temperature')
-
+pyplot.legend()
 pyplot.show()
